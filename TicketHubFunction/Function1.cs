@@ -56,7 +56,7 @@ namespace TicketHubFunction
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                await conn.OpenAsync(); // Note the ASYNC
+                await conn.OpenAsync(); 
 
                 var query = "INSERT INTO tickethub (ConcertId, Email, Name, Phone, Quantity, CreditCard, Expiration, SecurityCode, Address, Province, PostalCode,City, Country) VALUES (@ConcertId, @Email, @Name, @Phone, @Quantity, @CreditCard, @Expiration, @SecurityCode, @Address, @Province, @PostalCode,@City, @Country);";
 
