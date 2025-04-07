@@ -79,6 +79,7 @@ namespace TicketHubFunction
                     await cmd.ExecuteNonQueryAsync();
                 }
             }
+            _logger.LogInformation("Contact added to database");
         }
     }
 }

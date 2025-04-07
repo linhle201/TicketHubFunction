@@ -29,8 +29,7 @@ namespace TicketHubFunction
         public int Quantity { get; set; }
 
         [Required]
-        [CreditCard]
-        [ErrorMessage = "Invalid credit card number.")]
+        [CreditCard(ErrorMessage = "Invalid credit card number.")]
         public string CreditCard { get; set; } = string.Empty;
 
 
